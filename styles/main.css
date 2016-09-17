@@ -1,0 +1,89 @@
+/* This is the main styles sheet for the index page of the TwitchTV Viewer
+Author: R. Wood
+Date: Sept, 2016 */
+
+/* GENERAL STYLES */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Iceland', cursive;
+}
+
+
+
+/* SPECIFIC STYLES */
+
+h1 {
+  font-family: 'Fontdiner Swanky', cursive;
+}
+
+.panel-heading {
+  font-size: 24px;
+}
+
+
+
+/* HEADER STYLES */
+
+.header {
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+.navbar {
+  background-color: #555;
+}
+
+.nav-pills li {
+  background-color: #aaa;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.nav-pills li a {
+  font-size: 18px;
+  color: #fff;
+}
+
+
+/* MAIN CONTENT STYLES */
+
+.main-content {
+  margin-top: 15px;
+  margin-bottom: 20px
+}
+
+.panel {
+  margin: 30px;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.topper {
+  font-size: 18px;
+}
+
+
+
+/* FOOTER STYLES */
+
+footer {
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid black;
+  padding: 15px 0;
+  margin-top: 10px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

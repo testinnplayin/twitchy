@@ -1,0 +1,94 @@
+<!-- This is the main (and only) page for the TwitchTV viewer project as described in the README file associated with
+this app.
+Author: R. Wood, Date: Sept, 2016 -->
+
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="UA-X-Compatible" content="IE=edge" />
+    <title>Twitchings | TwitchTV List</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel ="stylesheet" type="text/css"/>
+    <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Iceland" rel="stylesheet">
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel="stylesheet" type="text/css" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+              <div class="nav navbar-nav navbar-right">
+                <ul class="nav nav-pills">
+                  <li><a href="#offline" id="top">Users Offline</a></li>
+                  <li><a href="#deleted">Other Users</a></li>
+                </ul>
+              </div>
+            </div><!-- navbar collapse -->
+          </div><!-- container-fluid -->
+        </nav>
+        <h1><i class="fa fa-television fa-2x"></i> TwitchTV List</h1>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="container-fluid">
+        <!-- panel of online users -->
+        <div class="panel panel-success">
+          <div class="panel-heading">Users Online <span class="open-close">+</span></div>
+          <div class="panel-body">
+            <p>Check here to see the TwitchTV users you follow that are currently online.</p>
+          </div>
+          <!-- table of online users -->
+          <table class="table table-hover online-users">
+            <!-- online users loaded in here -->
+          </table>
+        </div>
+        <div class="row"><div class="col-xs-2"><a href="#top" class="topper">Go to top</a></div></div>
+
+        <!-- panel of offline users -->
+        <div class="panel panel-warning" id="offline">
+          <div class="panel-heading">Users Offline <span class="open-close">+</span></div>
+          <div class="panel-body">
+            <p>Check here to see the TwitchTV users you follow that are currently offline</p>
+          </div>
+          <!-- table of offline users-->
+          <table class="table table-hover offline-users">
+            <!-- offline users loaded in here -->
+          </table>
+        </div>
+        <div class="row"><div class="col-xs-2"><a href="#top" class="topper">Go to top</a></div></div>
+        
+        <!-- panel of users with non-existent accounts -->
+        <div class="panel panel-danger" id="deleted">
+          <div class="panel-heading">Other Users <span class="open-close">+</span></div>
+          <div class="panel-body">Users who have either deleted their accounts or never had an account</div>
+          <!-- table of users with non-existent accounts -->
+          <table class="table table-hover n-a">
+            <!-- non-existent accounts loaded here -->
+          </table>
+        </div>
+        <div class="row"><div class="col-xs-2"><a href="#top" class="topper">Go to top</a></div></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-2 left"><p>Wood, R.</p></div>
+          <div class="col-xs-2 right"><p>Powered by: <a href="https://twitch.tv" target="_blank">TwitchTV</a></p></div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+
+</html>
