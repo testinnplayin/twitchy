@@ -4,7 +4,7 @@
 $(document).ready(function() {
   var users = ['brunofin', "ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck",
   "habathcx", "RobotCaleb", "noobs2ninjas", "comster404"];
-  var clientID = "roqffuqyfxwkztfnou4iafve53p0qe8";
+  var clientID = ""; //please add your own registered client ID
 
   function getUsers(users) {
     var n = users.length;
